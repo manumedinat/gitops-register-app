@@ -32,6 +32,7 @@ pipeline {
                 sh """
                    git config --global user.name "Manuel Medina"
                    git config --global user.email "manumedinat97@gmail.com"
+                   git remote set-url origin https://github.com/manumedinat/gitops-register-app.git
                    git add deployment.yaml
                    git commit -m "Updated Deployment Manifest"
                 """
